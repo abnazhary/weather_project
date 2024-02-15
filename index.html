@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand d-flex" href="#">
+                <img src="imag/logo.png" class="img me-3 p-2" alt="logo" />
+                <div class="mt-2">
+                  <p>
+                    Weather
+                    <span>tagline goes here</span>
+                  </p>
+                </div>
+              </a>
+      
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+            </div>
+          </nav>
+      
+          <div class="home">
+            <div class="container">
+              <form class="find-location position-relative">
+                <input
+                  type="text"
+                  class="search-input position-relative form-control rounded-5 p-3"
+                  placeholder="Find your location..."
+                  id="search"
+                />
+              </form>
+            </div>
+          </div>
+          
+          <div class="weatherTable">
+            <div class="container">
+              <div class="row  d-flex justify-content-between ">
+                <!-- ToDay -->
+                <div class="col-md-4 ">
+                 <div class="h-100 w-100 current-day">
+                  <div class="table-header py-2 d-flex justify-content-between">
+                    
+                    <p class="my-auto" id="dayDateName">sunday</p>
+                    <span>
+                      <span class="my-auto" id="dateNumber"></span>
+                      <span class="my-auto" id="dateMonth"></span>
+                    </span>
+                    
+                  </div>
+                  <div class="table-content">
+                    <div class="location" id="dayLocation">cairo</div>
+                    <div class="degree row gx-5 align-items-center">
+                      <div class="num col-md-6 " id="dayTemp">
+                       
+                      </div>
+                      <img src="" id="dayIcon" class="w-25" alt="">
+                      <!-- <div class="forecast-icon  col-md-6" >
+                        
+                      </div> -->
+                    </div>
+                    <div class="custom mb-3">
+                        <a class="text-decoration-none" id="dayText" href="">clear</a>
+                    </div>
+                 
+                    <div class="item-footer text-light d-flex p-3">
+                        <div class="d-flex me-3" >
+                            <img src="imag/icon-umberella.png" class="footer-icon me-2" alt="">
+                            <p class="humidity" id="dayHumditiy">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="imag/icon-wind.png" class="footer-icon me-2" alt="">
+                            <p class="wind" id="dayWind">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="imag/icon-compass.png" class="footer-icon me-2" alt="">
+                            <p class="windDirection" id="dayWindDir">20</p>
+                        </div>
+                    </div>
+                 
+                 
+                  </div>
+                 </div>
+                </div>
+      
+                <!-- Next Today -->
+                <div class="item-next-day col-md-4   ">
+                  <div class="py-2  text-center nextDayHead text-light" id="tomorrowData">
+                    <p class="nextDayName my-auto">friday</p>
+                  </div>
+                  <div class="item-content text-start text-light p-3 text-center " id="tomorrow">
+                    <img src="imag/113.webp" class="nextConditionImg" alt="">
+                    <h3>
+                      <span class="nextMaxTemp">16</span>
+                      <span><sub>o</sub> C</span>
+                    </h3>
+                    <h5 class="">
+                      <span class="nextMinTemp">16</span>
+                      <span><sub>o</sub> C</span>
+                    </h5>
+                    <a class="text-decoration-none nextConditionText" href="">rain near by</a>
+                  </div>
+                </div>
+
+             
+
+                <!-- next tomorrow -->
+               
+
+                <div class="item-next-tomorrow col-md-4 ">
+                  <div class="py-2 text-center nextTomorrowHead text-light" id="tomorrowData">
+                    <p class="nextDayName my-auto">friday</p>
+                  </div>
+                  <div class="item-content text-start text-light p-3 text-center pt-3" id="tomorrow">
+                    <img src="imag/113.webp" class="nextConditionImg" alt="">
+                    <h3>
+                      <span class="nextMaxTemp">16</span>
+                      <span><sub>o</sub> C</span>
+                    </h3>
+                    <h5 class="">
+                      <span class="nextMinTemp">16</span>
+                      <span><sub>o</sub> C</span>
+                    </h5>
+                    <a class="text-decoration-none nextConditionText" href="">rain near by</a>
+
+                  </div>
+                </div>
+   
+      
+               
+              </div>
+            </div>
+          </div>
+         
+      
+          <!-- <footer class="site-footer">
+            <div class="container">
+              <div class="row justify-content-between">
+                <div class="col-md-8 mb-4">
+                  <form class="find-location position-relative">
+                    <input
+                      type="text"
+                      class="search-input position-relative form-control rounded-5 p-3"
+                      placeholder="Enter your email to subscribe..."
+                    />
+                    <input
+                      type="button"
+                      class="submit-btn btn rounded-5"
+                      value="Subscribe"
+                      id="s"
+                    />
+                  </form>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                  <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </div>
+                </div>
+              </div>
+      
+              <p class="colophon">
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+              </p>
+            </div>
+          </footer> -->
+      
+      
+
+
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

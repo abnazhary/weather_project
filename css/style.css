@@ -1,0 +1,153 @@
+body{
+    background-color: #1e202b;
+    color: #bfc1c8;;
+  }
+ 
+  .navbar
+  {
+   
+    padding: 40px !important;
+  }
+  
+  .navbar-brand{
+    font-size: 12px;
+  }
+  
+  .navbar-brand p{
+    padding-bottom: 0px;
+      font-size: 1.1428571429em;
+      color: white;
+  }
+  .navbar-brand span{
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+  }
+  
+  
+  .nav-link:hover{
+    
+     
+      border-color: #009ad8;
+      color: #009ad8 !important;
+  }
+  
+  .home{
+    background-image: url(../imag/banner.png);
+    background-position: center center;
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+  }
+  .find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border-color: #1e202b;
+  }
+  .find-location input::placeholder{
+    color: rgb(139, 137, 137) !important;
+  }
+  /*  */
+  
+  
+  .table-header{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .nextTomorrowHead{
+    background: rgba(0, 0, 0, 0.1) !important;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .nextDayHead{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .weatherTable{
+    position: relative;
+    top: -120px;
+  }
+  .weatherTable  .current-day{
+  background-color: #323544a8;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  }
+  .weatherTable  .item-next-day{
+  background-color: #323544;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  
+  }
+  .weatherTable  .item-next-tomorrow{
+  background-color: #323544;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  }
+
+  @media only screen and (max-width: 767px) {
+    .weatherTable  .current-day{
+      border-bottom-left-radius: 0px;
+      border-top-right-radius: 10px;
+      }
+  }
+  /* 767 */
+  .weatherTable .item-next-day{
+    background-color:#262936;
+    text-align: center;
+  }
+  .weatherTable .item-next-day h5{
+    color: #bfc1c8;
+  }
+  .weatherTable .item-next-tomorrow h5{
+    color: #bfc1c8;
+  }
+  .weatherTable  .nextMaxTemp {
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+  }
+  .weatherTable .nextTomorrowHead{
+    background-color:#323544;
+    border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+  text-align: center;
+  
+  }
+  @media only screen and (max-width: 767px) {
+    .weatherTable  .therid-day{
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+      }
+  }
+  
+  .table-content{
+  padding: 10px 20px;
+  }
+  .table-content .location{
+    font-size: 1.2857142857em;
+      font-weight: 400;
+  }
+  .table-content .degree{
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+  }
+  
+ 
+ 
+  .site-footer .social-links a:hover{
+    background: #009ad8;
+    color: white;
+  }
+
+  .weatherTable .item-footer img{
+    width: 20px;
+    height: 20px;
+  }
